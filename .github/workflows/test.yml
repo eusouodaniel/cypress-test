@@ -36,6 +36,10 @@ jobs:
       - name: Generate HTML report
         run: npm run report:generate
       
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
+      
       - name: Deploy report page
         uses: peaceiris/actions-gh-pages@v3
         with:
