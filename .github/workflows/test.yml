@@ -38,7 +38,7 @@ jobs:
       
       - name: Install rsync 📚
         run: |
-          apt-get update && apt-get install -y rsync
+          apt-get update && apt-get install -y rsync && apt-get install -y git-lfs
       
       - name: Deploy report page
         uses: peaceiris/actions-gh-pages@v3
