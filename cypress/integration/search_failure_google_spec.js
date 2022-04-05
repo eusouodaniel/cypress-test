@@ -12,6 +12,6 @@ describe('Search fail Google', () => {
     })
 
     it('Expect more than 1000 results', () => {
-        cy.get('[id="result-stats"]').contains('50 results')
+        cy.get('[id="result-stats"]').contains('Aproximadamente 1.160.000 resultados')
     })
   })
